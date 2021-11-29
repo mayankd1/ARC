@@ -11,12 +11,15 @@ import re
 ### examples below. Delete the three examples. The tasks you choose
 ### must be in the data/training directory, not data/evaluation.
 def solve_aabf363d(x):
+    # Get the shape of i/p NP Array
     row,col=x.shape
-     
+    # Store the Color value from the first column-last row 
     colorEnd = x[row-1,0] 
-    
-    x[row-1,0] = 0   
+    # Changing the Color of the first column-last row to black
+    x[row-1,0] = 0
+    # Changing the Color of the figure by checking all non-zero values in the matrix   
     x[x > 0] = colorEnd
+    # Return O/p
     return x
 
 def solve_c8cbb738(x):
@@ -69,8 +72,8 @@ def solve_c8cbb738(x):
 
     return output_matrix
 
-def solve_05269061(x):
-    return x
+# def solve_05269061(x):
+#     return x
 
 
 def main():
