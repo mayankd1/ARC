@@ -64,3 +64,27 @@ When your output grid is ready, click the green "Submit!" button to check your a
 After you've obtained the correct answer for the current test input grid, you can switch to the next test input grid for the task using the "Next test input" button (if there is any available; most tasks only have one test input).
 
 When you're done with a task, use the "load task" button to open a new task.
+
+### Functions
+
+solve_c3f564a4(x)
+This function takes a grid (Which contains a pattern and blank bits) and returns the same sized grid after 
+filling the blank bits with pattern. 
+
+solve_9f236235(x)
+This function takes in (m,m) sized grid and outputs (n,n) sized grid. The input grid consists of mini colored squared grids seperated
+with partition lines in both axis. The task is to identify the color of this mini grids and output a grid of size(Number of partitions+1).
+The output is to be inversed (Left mirrored image) and returned.
+
+solve_6ecd11f4(x)
+The input grid (size: (m,m)) consists of a small color grid of size (n,n) and pattern of single color 'c'. The task is to output 
+a grid of size (n,n) after merging the colors with respective pattern (replace color with 0 if the pattern consists of black (color code=0)
+color pixel. 
+
+solve_c8cbb738(x)
+This function takes a grid (Which contains rectangular shapes) and returns a grid with 
+all the shapes fitted to the maximum dimension of all the rectangles.
+
+solve_aabf363d(x)
+This function takes a grid (Which contains output color of the figure at first column last row) and returns a grid with 
+the object drawn with the given color.
